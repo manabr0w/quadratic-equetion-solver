@@ -11,11 +11,9 @@ def file_read_method():
         with open(filename, 'r') as file:
             data = file.read()
 
-            # Перевірка на наявність нового рядка в кінці файлу
             if not data.endswith("\n"):
                 raise ValueError
 
-            # Видаляємо зайві пробіли та розбиваємо рядок на числа
             parts = data.strip().split()
 
             if len(parts) != 3:
