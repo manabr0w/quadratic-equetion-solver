@@ -2,7 +2,7 @@ import sys
 
 def file_read_method():
     if len(sys.argv) != 2:
-        print("Usage: python script.py <filename>")
+        print("Usage: python file_read_method <filename>")
         sys.exit(1)
 
     filename = sys.argv[1]
